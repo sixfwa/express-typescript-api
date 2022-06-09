@@ -1,0 +1,41 @@
+{
+  "name": "express-typescript-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "prisma": {
+    "seed": "node --require esbuild-register prisma/seed.ts"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sixfwa/express-typescript-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sixfwa/express-typescript-api/issues"
+  },
+  "homepage": "https://github.com/sixfwa/express-typescript-api#readme",
+  "dependencies": {
+    "@prisma/client": "^3.15.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.13",
+    "@types/node": "^17.0.41",
+    "esbuild-register": "^3.3.3",
+    "nodemon": "^2.0.16",
+    "prisma": "^3.15.1",
+    "typescript": "^4.7.3"
+  }
+}
